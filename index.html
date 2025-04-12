@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta width="device-width" content="initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <h2>Sign Up Form</h2>
+    <form action="action_page.php" target="_blank" method="post" autocomplete="on" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset style="background-color:#ddd;border:solid red;">
+            <legend style="color:blue;">Personal details :</legend>
+        <input placeholder="First Name" name="firstname" type="text" required autofocus>
+         <br> <br>
+         <input placeholder="Other Name (optional)" name="othername" type="text" disabled>
+         <br><br>
+         <input placeholder="Last Name"p name="lastname" type="text">
+         <br><br>
+         <input placeholder="Email" type="email" multiple>
+         <br><br>
+         <input placeholder="Phone Number" type="tel">
+         <br><br>
+         
+      <input type="password" name="pwd" placeholder="Password">  
+      <br><br>
+    <input type="text" pattern="[A-Z a-z]{3}" title="Three Letter Country Code" placeholder="Country Code">  
+       
+      </fieldset>
+      <br><br>
+      <fieldset>
+     <legend>Hobbies :</legend>
+       
+     <label> Gender :  </label>
+      <br>
+     <input type="radio" name="gender" id="m" checked>    
+        <label for="m">Male</label> 
+   <input type="radio" name="gender" id="f">
+     <label for="f">Female</label>   
+     
+         <br><br>
+         <label for="colour">Choose a colour:</label>
+         <select id="colour" size="3">
+         <option>Select</option>    
+         <option value="red">Red</option>
+         <option value="blue">Blue</option>
+         <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+         </select>
+         <br><br>
+         Choose a car :
+       <input list="cars">  
+         <datalist id="cars">
+          <option value="Benz">   
+             <option value="Toyota">
+             <option value="Honda">
+             <option value="Volvo">
+             <option value="Ferrari">
+         </datalist>
+         <br><br>
+         <label for="favcol">Favorite Color :</label>
+      <input type="color" id="favcol" value="#0000ff">   
+      <br><br>
+    <label>University of Choice :</label>  <br><br>
+     <input type="checkbox" id="uil">  
+       <label for="uil">Unilorin</label>
+       <br>
+      <input type="checkbox" id="ul">  
+       <label for="ul">Unilag</label>
+       <br>
+      <input type="checkbox" id="ui">  
+       <label for="ui">Unibadan</label>
+       <br>
+      <input type="checkbox" id="up">  
+       <label for="up">Uniport</label>
+     <br><br>
+     <label for="dob">Date of birth :</label>
+      <input type="date" id="dob" max="2005-01-01">
+      </fieldset>
+      
+      
+      <br><br>
+      <label for="dt">Date and Time</label>
+      <input type="datetime-local" id="dt">
+     <br><br>
+     <label for="month">Month</label>
+     <input type="month" id="month">
+      <br><br>  
+      <label for="time">Time :</label>
+      <input id="time" type="time">
+      
+      
+      
+      <br><br>
+      <label for="myfile">Choose a file :</label><br><br>
+   <input type="file" id="myfile" name="myfile" multiple>
+   <br><br>
+   <label for="qty">Choose a Quantity (between 1 and 5)</label>
+  <input type="number" id="qty" min="1" max="5">   
+  <br><br>
+  <label for="num">Choose a number from 0 - 100 (interval of 100) :</label> 
+   <input type="number" id="num" min="0" max="100" step="10" placeholder="0 - 100">   
+      
+      
+      
+         
+    <br><br>     0
+ <input type="range" id="a" name="a" value="50">
+  100 +
+<br><br>
+  <input type="number" id="b" name="b" value="50"> 
+
+  =
+  <output name="x" for="a b"></output>
+    
+         
+      <br><br>    <input type="image" src="t.jpg" alt="Submit" height="42" width="42">
+      <button type="button">Submit</button>
+      <input type="reset" value="Reset">
+        
+        
+        
+    </form>
+    
+    
+  
+    
+    
+    
+</body>
+</html>
